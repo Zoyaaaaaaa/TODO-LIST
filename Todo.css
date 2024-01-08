@@ -80,10 +80,37 @@ button:hover {
   background-color: rgb(10, 22, 61) ;
 }
 
-.calendar{
+
+.calendar {
   height: 400px;
-  width: 700px;
-  margin-left: 37%;
+  width: 300px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the calendar */
   color: #0b0c0f;
- 
+  overflow: hidden; /* Hide overflow if needed */
+  border: 1px solid #2C3247;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.react-calendar__tile--active {
+  background-color: #14161F;
+  color: #e1e0eb;
+}
+
+.react-calendar__tile--now {
+  background-color: #14161F;
+  color: #e1e0eb;
+  border: 1px solid #e1e0eb;
+}
+
+.react-calendar__month-view__days__day {
+  font-size: 16px;
 }
